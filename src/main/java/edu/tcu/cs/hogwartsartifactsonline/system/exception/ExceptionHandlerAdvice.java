@@ -19,7 +19,7 @@ public class ExceptionHandlerAdvice {
 
     @ExceptionHandler({ObjectNotFoundException.class})
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    Result handleArtifactNotFoundException(Exception ex) {
+    Result handObjectNotFoundException(Exception ex) {
         return new Result(false, StatusCode.NOT_FOUND, ex.getMessage());
     }
 
