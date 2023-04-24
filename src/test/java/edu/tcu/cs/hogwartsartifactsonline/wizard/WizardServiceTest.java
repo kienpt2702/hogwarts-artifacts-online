@@ -251,7 +251,6 @@ class WizardServiceTest {
 
         // When
         this.wizardService.assignArtifact(3, "1250808601744904192");
-
         // Then
         assertThat(a.getOwner().getId()).isEqualTo(3);
         assertThat(w3.getArtifacts()).contains(a);
